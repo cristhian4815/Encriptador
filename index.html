@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto: ¡Escribe lo que quieras y descubre la magia!</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header-logo" src="./assets/images/Logo.svg" alt="logo de alura">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="izquierda">
+                <textarea id="ingreseTexto" class="ingrese-texto" placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+                    <img class="izquierda-advertencia" src="./assets/images/advertencia.svg" alt="advertencia para indicar la escritura del texto">
+                    <span class="izquierda-advertencia-texto">Solo letras minúsculas y sin acentos</span>
+                    <div class="botones">
+                        <button id="botonEncriptar" class="botones-encriptar">Encriptar</button>
+                        <button id="botonDesencriptar" class="botones-desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>      
+            <div id="derecha" class="derecha">
+                <div>
+                    <img id="muneco" class="muneco" src="./assets/images/Muñeco.svg" alt="varón con una lupa observando un diamante" />
+                    <textarea id="mensajeFinal" class="mensaje-final" placeholder="Ningún mensaje fue encontrado"></textarea>
+                    <p id="textoEncriptar" class="texto-encriptar">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button id="botonCopiar" class="boton-copiar oculto">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>    
+    <script src="./js/script.js"></script>
+</body>
+</html>
